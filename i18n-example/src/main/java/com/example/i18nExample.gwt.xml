@@ -1,0 +1,10 @@
+<module rename-to="example">
+    <inherits name="com.google.gwt.user.User" />
+
+    <inherits name="com.colinalworth.i18n.I18n"/>
+
+    <extend-property name="locale" values="en_US" />
+    <set-property name="locale" value="en_US" />
+
+    <entry-point class="com.example.client.App" />
+</module>

@@ -1,0 +1,13 @@
+<module>
+    <inherits name="com.google.gwt.user.User" />
+
+    <define-configuration-property name="rt.locale" is-multi-valued="true"/>
+    <set-configuration-property name="rt.locale" value="default"/>
+
+    <generate-with class="com.colinalworth.i18n.rebind.RuntimeConstantsGenerator">
+        <any>
+            <when-type-assignable class="com.google.gwt.i18n.client.Constants" />
+            <when-type-assignable class="com.google.gwt.i18n.shared.DateTimeFormatInfo" />
+        </any>
+    </generate-with>
+</module>
